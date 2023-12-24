@@ -1,0 +1,19 @@
+{
+  "name": "Shorts2Video ",
+  "description": "Transform YouTube Shorts into full-fledged videos with a single click for a richer viewing experience",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs"
+  ],
+  "action": {
+    "default_title": "Click to open as full video"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://www.youtube.com/shorts/*",
+    "http://www.youtube.com/shorts/*"
+  ]
+}
